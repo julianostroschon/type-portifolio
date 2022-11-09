@@ -1,5 +1,3 @@
-// FILE: main.js
-
 import { createApp } from 'vue'
 import { Quasar } from 'quasar'
 import quasarIconSet from 'quasar/icon-set/mdi-v6'
@@ -23,11 +21,10 @@ import 'quasar/src/css/index.sass'
 import App from './App.vue'
 
 const myApp = createApp(App)
-
-myApp.use(Quasar, {
-  plugins: {}, // import Quasar plugins and add here
-  iconSet: quasarIconSet,
-})
+  .use(Quasar, {
+    plugins: {}, // import Quasar plugins and add here
+    iconSet: quasarIconSet,
+  })
 
 // Assumes you have a <div id="app"></div> in your index.html
 myApp.mount('#app')
