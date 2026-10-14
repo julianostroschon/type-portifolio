@@ -4,10 +4,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.mjs",
+    "test:rls": "node scripts/test-rls.mjs",
+    "seed": "node scripts/seed.mjs"
   },
   "dependencies": {
     "@quasar/extras": "^1.15.5",
+    "@supabase/supabase-js": "^2.117.3",
     "quasar": "^2.10.1",
     "vue": "^3.2.41",
     "vue-router": "^4.1.6"
@@ -17,5 +21,6 @@
     "@vitejs/plugin-vue": "^3.2.0",
     "sass": "1.32.12",
     "vite": "^3.2.3"
-  }
+  },
+  "type": "module"
 }

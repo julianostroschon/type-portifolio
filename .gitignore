@@ -39,6 +39,8 @@ build/Release
 
 # Dependency directories
 node_modules/
+.playwright-cli/
+output/playwright/
 jspm_packages/
 
 # TypeScript v1 declaration files
@@ -102,3 +104,13 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Local environment overrides
+.env.local
+.env.*.local
+
+# Locally generated seed credentials
+.seed-credentials.local.json
+.seed-credentials.local.json.*.tmp
+.supabase-project.local.json
+supabase/.temp/
